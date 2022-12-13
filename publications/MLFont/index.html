@@ -1,0 +1,200 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Learning Better Font Slicing Strategies from Data</title>
+  <link rel="stylesheet" type="text/css" href="../../resources/bootstrap/cerulean/bootstrap.min.css">
+  <link rel="shortcut icon" href="./resources/logo.png">
+
+  <!--Open Graph Metadata-->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Learning Better Font Slicing Strategies from Data" />
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/google/speaker-id/master/publications/MLFont/resources/TTF_ML_slicing.png" />
+  <meta property="og:url" content="https://google.github.io/speaker-id/publications/MLFont/" />
+
+  <!--Twitter Card Metadata-->
+  <meta name="twitter:card" content="mlfont" />
+  <meta name="twitter:url" content="https://google.github.io/speaker-id/publications/MLFont/" />
+  <meta name="twitter:title" content="Learning Better Font Slicing Strategies from Data" />
+  <meta name="twitter:image:src"
+    content="https://raw.githubusercontent.com/google/speaker-id/master/publications/MLFont/resources/TTF_ML_slicing.png" />
+</head>
+
+<body>
+  <div>
+    <h1>Learning Better Font Slicing Strategies from Data</h1>
+
+    <h2>Defensive Publication</h2>
+
+    <p>
+      <a href="https://www.tdcommons.org/dpubs_series/906/">[Link]</a> to Technical Disclosure Commons
+    </p>
+
+    <p>
+      <a href="./resources/Learning Better Font Slicing Strategies from Data.pdf">[PDF]</a> of the document
+    </p>
+
+    <h3>Authors</h3>
+
+    Quan Wang (quanw@google.com), Yiran Mao (yiranm@google.com)
+
+    <h3>Abstract</h3>
+
+    <p>
+      Often, fonts used in online resources such as websites are downloaded
+      from a server to a local device used for browsing the resource. While
+      typical Latin fonts are relatively small, such as on the order of
+      hundreds of kilobytes, some Latin fonts and, more typically, non-Latin,
+      e.g. Chinese, Japanese, Korean, etc., fonts can be much larger, such as
+      on the order of tens of megabytes. Distributing these fonts in their
+      entirety can result in a slow user experience, and so what is needed is
+      a method for faster distribution of these web fonts.
+    </p>
+
+    <p>
+      Generally, the present disclosure is directed to serving font files in
+      topical subsets. In particular, in some implementations, the systems and
+      methods of the present disclosure can include or otherwise leverage one
+      or more machine-learned models to predict topic labels of characters in
+      a font based on a corpus of characters or glyphs.
+    </p>
+
+    <h2>Early Access</h2>
+
+    <p>
+      <a href="https://fonts.google.com/earlyaccess#Noto+Sans+SC+Sliced">
+        Noto Sans SC Sliced (Chinese Simplified)
+      </a>
+      is now publicly accessible on
+      <a href="https://fonts.google.com/earlyaccess">Early Access</a>!
+    </p>
+
+    <p>
+      This font is the sliced version of
+      <a href="https://fonts.google.com/earlyaccess#Noto+Sans+SC">
+        Noto Sans SC
+      </a>,
+      using the topic model + genetic algorithm approach describe here.
+      It serves all 44,683 characters of this font, while Noto Sans SC only
+      serves a subset of
+      <a href="https://blogs.adobe.com/CCJKType/2014/03/china-8105.html">
+        8105 characters
+      </a>.
+    </p>
+
+    <blockquote class="twitter-tweet" data-lang="en">
+      <p lang="en" dir="ltr">.<a href="https://twitter.com/Google?ref_src=twsrc%5Etfw">@Google</a> is using <a
+          href="https://twitter.com/hashtag/MachineLearning?src=hash&amp;ref_src=twsrc%5Etfw">#MachineLearning</a>
+        to optimize Chinese, Japanese &amp; Korean web fonts - so they load faster than ever: <a
+          href="https://t.co/HKYJMcc1iG">https://t.co/HKYJMcc1iG</a>
+        <a href="https://t.co/KKlysaSRix">pic.twitter.com/KKlysaSRix</a></p>&mdash; Google Fonts (@googlefonts) <a
+        href="https://twitter.com/googlefonts/status/900019727732531200?ref_src=twsrc%5Etfw">August
+        22, 2017</a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <h3>Top Users</h3>
+
+    <p>
+      <li>translate.google.cn</li>
+      <li>developers.google.com</li>
+      <li>my.clevelandclinic.org</li>
+      <li>mini.gameloft.com.cn</li>
+      <li>www.kerrylogistics.com</li>
+      <li>www.kdanmobile.com</li>
+      <li>neum.kr</li>
+      <li>www.solvil-et-titus.my</li>
+      <li>www.mala-1.com.tw</li>
+      <li>www.solvil-et-titus.hk</li>
+      <li>www.honam.ac.kr</li>
+      <li>allie-campaign.com</li>
+      <li>www.toyota-body.co.jp</li>
+      <li>tw.news.kobo.com</li>
+      <li>www.mos.ru</li>
+    </p>
+
+    <h3>Media</h3>
+
+    <h4>Google Fonts official Twitter announcements</h4>
+
+    <li><a
+        href="https://twitter.com/googlefonts/status/900019727732531200">https://twitter.com/googlefonts/status/900019727732531200</a>
+    </li>
+    <li><a
+        href="https://twitter.com/googlefonts/status/900143295405469698">https://twitter.com/googlefonts/status/900143295405469698</a>
+    </li>
+    <li><a
+        href="https://twitter.com/googlefonts/status/900374191576293376">https://twitter.com/googlefonts/status/900374191576293376</a>
+    </li>
+    <li><a
+        href="https://twitter.com/googlefonts/status/900536047674720256">https://twitter.com/googlefonts/status/900536047674720256</a>
+    </li>
+    <li><a
+        href="https://twitter.com/googlefonts/status/900744987041726464">https://twitter.com/googlefonts/status/900744987041726464</a>
+    </li>
+    <li><a
+        href="https://twitter.com/googlefonts/status/900843782651891713">https://twitter.com/googlefonts/status/900843782651891713</a>
+    </li>
+    <li><a
+        href="https://twitter.com/googlefonts/status/901108264007553024">https://twitter.com/googlefonts/status/901108264007553024</a>
+    </li>
+    <li><a
+        href="https://twitter.com/googlefonts/status/901658119809458176">https://twitter.com/googlefonts/status/901658119809458176</a>
+    </li>
+
+    <h4>Unsolicited media/blog coverage (mostly in Chinese)</h4>
+
+    <li><a href="https://www.landiannews.com/archives/38885.html">landiannews</a></li>
+    <li><a href="http://dyartstyle.com/3641.html">dyartstyle</a></li>
+    <li><a href="https://www.ziti163.com/Item/1896.aspx">ziti163</a></li>
+    <li><a href="http://www.baozouweilai.com/a/65989.html">baozouweilai</a></li>
+    <li><a href="https://www.cnbeta.com/articles/tech/645051.htm">cnbeta</a></li>
+    <li><a href="http://www.cnblogs.com/fonts/p/7442369.html">cnblogs</a></li>
+    <li><a href="http://mini.eastday.com/a/170825115623956.html">eastday</a></li>
+    <li><a href="https://laod.cn/news/google-fonts-api.html">laod</a></li>
+    <li><a href="https://kknews.cc/tech/kzjppy8.html">kknews</a></li>
+
+    <h2>Production</h2>
+
+    <blockquote class="twitter-tweet">
+      <p lang="en" dir="ltr">🇨🇳 New year—new, faster fonts! Announcing support for both Simplified and Traditional
+        Chinese scripts. Learn more: <a href="https://t.co/B37jIlFDfp">https://t.co/B37jIlFDfp</a> <a
+          href="https://t.co/vKSzUKf6Y4">pic.twitter.com/vKSzUKf6Y4</a></p>&mdash; Google Fonts (@googlefonts) <a
+        href="https://twitter.com/googlefonts/status/1092874001523900417?ref_src=twsrc%5Etfw">February 5, 2019</a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <blockquote class="twitter-tweet" data-lang="en">
+      <p lang="en" dir="ltr">Japanese web fonts now load faster than ever! We just added 6 new kanji fonts using our
+        ⚡️⚡️⚡️ fast delivery system → Check ‘em out in our catalog, <a
+          href="https://t.co/6PAeAIrnXo">https://t.co/6PAeAIrnXo</a>
+        <a href="https://t.co/jlH58JSesC">pic.twitter.com/jlH58JSesC</a></p>&mdash; Google Fonts (@googlefonts) <a
+        href="https://twitter.com/googlefonts/status/1034155450432978946?ref_src=twsrc%5Etfw">August
+        27, 2018</a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <blockquote class="twitter-tweet" data-lang="en">
+      <p lang="en" dir="ltr">Did you know that Google Fonts now supports Korean, with 23 choices? Learn the technical
+        details that made this possible on the Google Developers blog 👉  <a
+          href="https://t.co/4Xg6nOyOK2">https://t.co/4Xg6nOyOK2</a>
+        <a href="https://t.co/mpC0QMUf1L">pic.twitter.com/mpC0QMUf1L</a></p>&mdash; Google Fonts (@googlefonts) <a
+        href="https://twitter.com/googlefonts/status/981564388548251648?ref_src=twsrc%5Etfw">April
+        4, 2018</a>
+    </blockquote>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <li><a href="https://design.google/news/google-fonts-launches-chinese-support/">
+        Google Fonts launches Simplified and Traditional Chinese support</a></li>
+    <li><a
+        href="https://design.google/news/google-fonts-launches-japanese-supportand-makes-loading-large-fonts-even-faster/">
+        Google Fonts launches Japanese support—and makes loading large fonts even faster</a></li>
+    <li><a href="https://design.google/news/google-fonts-launches-korean-support-and-unveils-faster-delivery-system/">
+        Google Fonts launches Korean support and unveils faster delivery system</a></li>
+    <li><a href="https://developers.googleblog.com/2018/04/google-fonts-launches-korean-support.html">
+        Google Fonts launches Korean support</a></li>
+  </div>
+</body>
+
+</html>

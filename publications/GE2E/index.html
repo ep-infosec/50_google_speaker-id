@@ -1,0 +1,140 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Generalized End-to-End Loss for Speaker Verification</title>
+  <link rel="stylesheet" type="text/css" href="../../resources/bootstrap/cerulean/bootstrap.min.css">
+  <link rel="shortcut icon" href="../../resources/logo.png">
+</head>
+
+<body>
+  <div>
+    <h1>Generalized End-to-End Loss for Speaker Verification</h1>
+
+    <h3>Paper</h3>
+
+    <p>
+      <a href="https://arxiv.org/abs/1710.10467">[Link]</a> to arXiv paper
+    </p>
+
+    <h3>Authors</h3>
+
+    <p>
+      Li Wan, Quan Wang, Alan Papir, Ignacio Lopez Moreno
+    </p>
+
+    <h3>Abstract</h3>
+
+    <p>
+      In this paper, we propose a new loss function called generalized
+      end-to-end (GE2E) loss, which makes the training of speaker verification
+      models more efficient than our previous tuple-based end-to-end (TE2E)
+      loss function. Unlike TE2E, the GE2E loss function updates the network
+      in a way that emphasizes examples that are difficult to verify at each
+      step of the training process. Additionally, the GE2E loss does not
+      require an initial stage of example selection. With these properties,
+      our model with the new loss function decreases speaker verification EER
+      by more than 10%, while reducing the training time by 60% at the same
+      time. We also introduce the MultiReader technique, which allows us to
+      do domain adaptation - training a more accurate model that supports
+      multiple keywords (i.e. "OK Google" and "Hey Google") as well as
+      multiple dialects.
+    </p>
+
+    <h3>Updates</h3>
+
+    <p>
+      There had been a typo in Eq. (3) of the original paper.
+      The correct equation should be:
+    </p>
+
+    <p>
+      <img src="resources/corrected_eq_3.png">
+    </p>
+
+    <p>
+      There had also been a typo in Eq. (6) of the original paper.
+      The correct equation should be:
+    </p>
+
+    <p>
+      <img src="resources/corrected_eq_6.png">
+    </p>
+
+    <h3>Slides</h3>
+
+    <a href="./resources/ICASSP 2018 GE2E.pptx">[PPTX]</a> for ICASSP 2018 presentation
+
+    <h3>Implementations</h3>
+
+    <p>
+      A Lingvo-based open source version of the GE2E loss is available <a href="https://github.com/google/speaker-id/blob/master/lingvo/loss_layers.py">[here]</a>.
+    </p>
+
+    <p>
+      We are also aware of several third-party implementations of this work, such as:
+      <li><a href="https://github.com/resemble-ai/Resemblyzer">
+          PyTorch implementation by resemble-ai</a></li>
+      <li><a href="https://github.com/Janghyun1230/Speaker_Verification">
+          TensorFlow implementation by Janghyun1230</a></li>
+      <li><a href="https://github.com/HarryVolek/PyTorch_Speaker_Verification">
+          PyTorch implementaion by HarryVolek</a></li>
+      <li><a href="https://github.com/CorentinJ/Real-Time-Voice-Cloning">
+          PyTorch implementaion as part of SV2TTS</a></li>
+    </p>
+
+    <p>
+      However, please note that
+      <b>we are NOT responsible for the correctness of any third-party
+        implementations.</b>
+      Please use your own judgement to decide whether you want to use these
+      implementations.
+    </p>
+
+    <h3>Datasets</h3>
+
+    <p>
+      We can't share our datasets externally. But a big part of our training
+      data are based on public datasets. You can find a list of these public
+      datasets at
+      <a href="https://github.com/wq2012/awesome-diarization#speaker-embedding-training-sets">
+        awesome-diarization</a>
+    </p>
+
+    <h3>Applications</h3>
+
+    <p>
+      The speaker recognition and embedding technique based on this paper has
+      been applied to multiple domains, including:
+      <li><a href="https://bolo.withgoogle.com/intl/en/">
+          Education</a></li>
+      <li><a href="https://google.github.io/speaker-id/publications/VoiceFilter/">
+          Source separation</a></li>
+      <li><a href="https://google.github.io/speaker-id/publications/VoiceFilter-Lite/">
+          On-device streaming source separation</a></li>
+      <li><a href="https://google.github.io/speaker-id/publications/LstmDiarization/">
+          Speaker diarization</a></li>
+      <li><a href="https://github.com/google/uis-rnn">
+          Supervised speaker diarization</a></li>
+      <li><a href="https://google.github.io/tacotron/publications/speaker_adaptation/">
+          Text-to-speech synthesis</a></li>
+      <li><a href="https://google-research.github.io/lingvo-lab/translatotron/">
+          Speech-to-speech translation</a></li>
+      <li><a href="https://arxiv.org/abs/1908.04284">
+          Voice activity detection</a></li>
+      <li><a href="https://arxiv.org/abs/1911.01601">
+          Anti-spoofing</a></li>
+      <li><a href="https://arxiv.org/abs/1712.01120">
+          Audio voice preservation test</a></li>
+      <li><a href="https://arxiv.org/abs/2104.13970">
+          Personalized keyphrase detection (Quick Phrases)</a></li>
+    </p>
+
+    <h3>Lecture</h3>
+
+    <iframe width="896" height="504" src="https://www.youtube.com/embed/AkCPHw2m6bY" frameborder="0"
+      allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</body>
+
+</html>
